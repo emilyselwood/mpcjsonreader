@@ -24,6 +24,8 @@ class MPCObject {
     private double m;
     @JsonProperty("n")
     private double n;
+    @JsonProperty("Principal_desig")
+    private String principalDesig;
     @JsonProperty("Other_desigs")
     private List<String> otherDesigs;
     @JsonProperty("U")
@@ -159,6 +161,14 @@ class MPCObject {
 
     public void setN(double n) {
         this.n = n;
+    }
+
+    public String getPrincipalDesig() {
+        return principalDesig;
+    }
+
+    public void setPrincipalDesig(String principalDesig) {
+        this.principalDesig = principalDesig;
     }
 
     public List<String> getOtherDesigs() {
